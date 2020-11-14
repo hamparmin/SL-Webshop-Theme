@@ -1,0 +1,45 @@
+{%-assign vendor_img=product.vendor-%}
+
+<div class="shopify-section">
+    <div class="grid-uniform featured-images">
+        <div class="grid__item small--one-whole one-third">
+            <noscript>
+                <img src={{vendor_img | append:'_1' | append: '.jpg'| asset_url}} alt="" />
+            </noscript>
+            <div class="gallery__image-container">
+                <div class="gallery__image-wrapper" style="padding-top:66.58333333333333%;">
+                    <img class="gallery__image lazyautosizes ls-is-cached lazyloaded"
+                        src={{vendor_img | append:'_2' | append: '.jpg'| asset_url}}
+                        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                        data-aspectratio="1.5018773466833542" data-sizes="auto" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="grid__item small--one-whole one-third">
+            <noscript>
+                <img src={{vendor_img | append:'_2' | append: '.jpg'| asset_url}} alt="" />
+            </noscript>
+            <div class="gallery__image-container">
+                <div class="gallery__image-wrapper" style="padding-top:66.58333333333333%;">
+                    <img class="gallery__image lazyautosizes ls-is-cached lazyloaded"
+                        src={{vendor_img | append:'_2' | append: '.jpg'| asset_url}}
+                        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                        data-aspectratio="1.5018773466833542" data-sizes="auto" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="grid__item small--one-whole one-third">
+            <noscript>
+                <img src={{vendor_img | append:'_3' | append: '.jpg'| asset_url}} alt="" />
+            </noscript>
+            <div class="gallery__image-container">
+                <div class="gallery__image-wrapper" style="padding-top:66.58333333333333%;">
+                    <img class="gallery__image lazyautosizes ls-is-cached lazyloaded"
+                        src={{vendor_img | append:'_3' | append: '.jpg'| asset_url}}
+                        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                        data-aspectratio="1.5018773466833542" data-sizes="auto" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+
+{% schema %}
+  {
+    "name": "Homepage Header",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+  {%- assign logo_width = 695 -%}
+  {%- assign logo_max_width = section.settings.logo_max_width | times: 1 -%}
+  {% if logo_max_width < logo_width %}
+    {%- assign logo_width = logo_max_width -%}
+  {% endif %}
+  .logo__image-wrapper {
+    max-width: {{ logo_width }}px;
+  }
+  .site-nav {
+    margin-top: 30px;
+}
+  .logo__image-wrapper {
+    margin: 0 auto;
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
